@@ -1,0 +1,43 @@
+.outer {
+  background-color: rgba(255, 0, 0, 0.952);
+  width: 650px;
+  height: 650px;
+  margin: 0 auto;
+  border-radius: 100%;
+  box-shadow: 1px 1px 15px rgba(14, 14, 14, 0.836);
+  margin-top: 28px;
+  position: relative;
+}
+
+.inner {
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 70px;
+  left: 72px;
+  border-radius: 100%;
+  box-shadow: inset 1px 1px 15px rgba(27, 27, 26, 0.753);
+  border: 4px solid rgba(255, 255, 255, 0.863);
+}
+
+.line1,
+.line2,
+.line3 {
+  background-color: black;
+  width: 6px;
+  height: 220px;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: rotatez(115deg);
+  transform-origin: bottom;
+}
+
+.line2 {
+  transform: rotatez(165deg);
+}
+
+.line3 {
+  transform: rotatez(203deg);
+}
