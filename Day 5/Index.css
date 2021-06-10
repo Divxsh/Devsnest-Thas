@@ -19,7 +19,8 @@ h1 {
   align-items: center;
   background-color: rgb(199, 185, 185);
   border-radius: 10px;
-  box-shadow: 0px 0px 15px 2px gold;
+  box-shadow: 0px 0px 15px 2px rgb(199, 185, 185);
+  /* box-shadow: 0px 0px 15px 2px #7a786d; */
 }
 
 .num {
@@ -32,12 +33,12 @@ h1 {
 }
 
 input {
+  width: 530px;
+  height: 40px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5rem;
   position: absolute;
   border: none;
-  width: 530px;
-  height: 40px;
   border-radius: 10px;
   text-align: center;
 }
@@ -55,18 +56,17 @@ input:focus {
   position: absolute;
   outline: none;
   background-color: rgba(63, 68, 68, 0.329);
-}
-
-.bottom {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.411);
 }
 
 .operations {
+  margin-top: 35px;
+  width: 530px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: stretch;
+  flex-flow: wrap;
 }
 
 .operations div {
@@ -93,13 +93,15 @@ input:focus {
 }
 
 #output {
-  width: 170px;
-  height: 200px;
+  width: 220px;
+  height: 40px;
   background-color: rgb(255, 255, 255);
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
   border-radius: 10px;
+  box-sizing: border-box;
+  padding: 7px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.411);
 }
