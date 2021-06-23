@@ -1,0 +1,28 @@
+body{
+    width: 100vw;
+    height:100vh;
+    margin: 0;
+    display: flex;
+}
+#container{
+    margin: auto;
+    width: 500px;
+    height:500px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.a{
+    box-sizing: border-box;
+    width: 25px;
+    height:25px;
+    border:1px solid #d6261366;
+  background-color: #E24E3F;
+}
+.b{
+    width: 25px;
+    height:25px;
+    background-color: #ffffff;
+}
+.a:hover{
+    background-color: #e24f3f85;
+}
