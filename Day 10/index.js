@@ -6,6 +6,7 @@ let images = [
   "./images/img5.png",
   "./images/img6.png",
 ];
+
 let imgName = ["cool", "love", "laughing", "sad", "scared", "happy"];
 images = [...images, ...images];
 imgName = [...imgName, ...imgName];
