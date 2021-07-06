@@ -25,7 +25,7 @@ const cards = document.querySelectorAll(".memory-card");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let reaminMoves = 2;
+let reaminMoves = 20;
 let totalCombo = 0;
 let remain = document.querySelector(".remain-moves");
 
