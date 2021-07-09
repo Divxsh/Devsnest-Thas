@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #5252e0e6;
+}
+section {
+  margin: auto;
+  width: 48vw;
+  height: 520px;
+  background-color: rgb(231, 222, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* Nav */
+.nav {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: beige;
+  box-shadow: 0px 2px 10px 2px rgba(73, 69, 69, 0.74);
+}
+.nav > h2 {
+  text-align: center;
+  line-height: 75px;
+}
+.nav .timer {
+  width: 100%;
+  height: 8px;
+  background-color: #5252e0e6;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  animation: timer 15s linear 1;
+}
+
+/* Quiz */
+
+.quiz {
+  width: 42vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.question {
+  width: 100%;
+  height: 65px;
+  margin-top: 20px;
+}
+
+.quiz-options {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.option {
+  height: 50px;
+  padding: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(122, 203, 235);
+  background: rgba(149, 204, 226, 0.712);
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Answer True or False  */
+.true,
+.false {
+  background-size: 26px;
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+}
+.true {
+  background-color: rgba(115, 221, 140, 0.502);
+  border: 2px solid #73dd8c;
+  background-image: url("./icons/check.svg");
+}
+.false {
+  background-color: #dd737380;
+  border: 2px solid #dd7373;
+  background-image: url("./icons/wrong.svg");
+}
+
+/* Next button */
+.next-btn {
+  width: 70px;
+  height: 40px;
+  background-color: #5252e0;
+  margin-left: auto;
+  background-image: url("./icons/next.svg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+.next-btn:active {
+  transform: scale(0.9);
+}
+@keyframes timer {
+  0% {
+    width: 100%;
+    border-radius: 0 50px 50px 0;
+  }
+  100% {
+    width: 0;
+  }
+}

@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aqua;
+}
+#screen {
+  width: 60vw;
+  height: 60px;
+  background-color: rgb(75, 16, 16);
+  border-radius: 120px 120px 20px 20px;
+}
+#Availability {
+  font-family: "Lucida Sans";
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+#seats {
+  display: grid;
+  grid-template-columns: repeat(6, 15vw);
+  grid-template-rows: repeat(6, 13vh);
+  grid-gap: 4px;
+  padding: 5px;
+  background-color: rgb(221, 93, 88);
+}
+
+.box {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.box:hover {
+  opacity: 0.7;
+}
+
+.boxclicked {
+  background-color: rgb(143, 47, 47);
+}
+
+#book,
+#remain {
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1300px) {
+  #Availability {
+    width: 50vw;
+    font-size: 0.9em;
+  }
+  #screen {
+    width: 50vw;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  #Availability {
+    width: 70vw;
+    font-size: 0.9em;
+  }
+  #screen {
+    width: 40vw;
+    height: 20px;
+  }
+}

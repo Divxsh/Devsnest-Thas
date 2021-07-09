@@ -1,0 +1,9 @@
+import "./index.css";
+
+function Box(){
+    return (
+        <div className="box"></div>
+    )
+}
+
+export default Box;
