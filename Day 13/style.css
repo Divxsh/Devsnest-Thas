@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffd987;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ddd085' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23bbc682' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%239abd80' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2378b37d' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2356aa7b' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+.quote-box {
+  width: 60%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  background: rgba(68, 156, 168, 0.356);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.quote {
+  height: 100%;
+  font-weight: 800;
+  font-size: 1.1rem;
+  word-spacing: 2px;
+  border-left: 5px solid red;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.quote-box span {
+  text-align: right;
+  margin-left: auto;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  background: rgba(68, 156, 168, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.363);
+}
