@@ -1,5 +1,5 @@
 let task = document.querySelector(".todo-add > input");
-let add_btn = document.querySelector(".todo-add > div");
+let add_btn = document.querySelector(".todo-add > img");
 let todo_list = document.querySelector(".todo-list");
 let temp;
 
@@ -36,7 +36,7 @@ function addItems() {
   else {
     let listitem = `<div class='task'>${
       task.value
-    }<div class=${'"dlt-btn"'}></div></div>`;
+    }<div class=${'"dlt-btn"'}></div> </div>`;
     temp += listitem;
     localStorage.setItem("item", temp);
     todo_list.innerHTML += listitem;

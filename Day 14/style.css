@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.block1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+.block2 {
+  background-color: rgb(15, 107, 160);
+}
+.block3 {
+  background-color: rgb(57, 194, 148);
+}
+.block4 {
+  background-color: rgb(190, 190, 27);
+}

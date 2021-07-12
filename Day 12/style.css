@@ -57,12 +57,17 @@ body {
   text-align: center;
   color: rgba(235, 231, 231, 0.753);
 }
-.todo-add > div {
-  width: 30px;
-  height: 32px;
+.todo-add div {
+  width: 35px;
+  height: 35px;
+}
+.todo-add div img {
+  width: 100%;
   cursor: pointer;
-  background: no-repeat center url("./icon/plus.svg");
-  background-size: 30px;
+}
+
+.todo-add div:hover {
+  transform: scale(0.9);
 }
 
 .todo-list {
