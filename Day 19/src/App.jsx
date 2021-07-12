@@ -1,22 +1,16 @@
 import "./style/App.css";
-import Box from "./Box";
-
-let BoardColor = [0,1,0,1,0,1,0,1,
-                  1,0,1,0,1,0,1,0,
-                  0,1,0,1,0,1,0,1,
-                  1,0,1,0,1,0,1,0,
-                  0,1,0,1,0,1,0,1,
-                  1,0,1,0,1,0,1,0,
-                  0,1,0,1,0,1,0,1,
-                  1,0,1,0,1,0,1,0
-]
+import Button from "./Component/Button";
 
 function App() {
   return (
-    <div className="board">
-      {BoardColor.map((item,i) =>{
-        return <Box key={i} bcolor = {item}/>
-      })}
+    <div className="App">
+      <h2>Counters</h2>
+      <div className="counter">
+      <Button/>
+      <Button/>
+      <Button/>
+      <Button/>
+      </div>
     </div>
   );
 }
