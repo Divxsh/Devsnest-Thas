@@ -5,23 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch Api</title>
+    <title>DOM Evenets</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="block1 block">
-            <div class="arrow-keys">
+
+        <div class="block1 block" tabindex="0">
+            <div class=" arrow-keys">
                 <div class="keys up"><img src="./icons/chevron-up-solid.svg" alt=""></div>
                 <div class="keys down"><img src="./icons/chevron-down-solid.svg" alt=""></div>
                 <div class="keys left"><img src="./icons/chevron-left-solid.svg" alt=""></div>
                 <div class="keys right"><img src="./icons/chevron-right-solid.svg" alt=""></div>
             </div>
         </div>
-        <div class="block2 block"></div>
-        <div class="block3 block"></div>
-        <div class="block4 block"></div>
+
+        <div class="block2 block">
+            <div class="box">
+            </div>
+            <h2 class="x"></h2>
+            <h2 class="y"></h2>
+        </div>
+
+        <div class="section3 block">
+            <div class=" item"></div>
+        </div>
+
+        <div class=" block4 block">
+            <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="./145862.svg" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+
+            <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
     </div>
     <script src="./script.js"></script>
 </body>
