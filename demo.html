@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+
+        }
+
+        .outer {
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            margin: auto;
+            display: flex;
+
+        }
+
+        .middle {
+            width: 250px;
+            height: 250px;
+            border: 2px solid rgb(0, 255, 42);
+            margin: auto;
+            display: flex;
+
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(0, 119, 255);
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <a href="https://domevents.dev/" onclick="clicked(event)">google</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".outer").addEventListener("click", function () {
+            console.log("I am outer");
+        })
+        document.querySelector(".middle").addEventListener("click", function () {
+            console.log("I am middle");
+        })
+        document.querySelector(".inner").addEventListener("click", function (e) {
+            // e.stopPropagation();
+            e.cancelBubble = true;
+            // console.log(e);
+            // e.preventDefault();
+        })
+        function clicked(e) {
+            e.preventDefault();
+        }
+
+    </script>
+</body>
+
+</html>
