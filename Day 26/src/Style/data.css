@@ -1,0 +1,10 @@
+.data {
+	text-align: center;
+}
+.data > h1 {
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.data > p {
+	font-weight: 600;
+}

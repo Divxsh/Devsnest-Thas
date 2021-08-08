@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#root {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	justify-content: space-evenly;
+	height: 100vh;
+}

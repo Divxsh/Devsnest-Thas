@@ -1,0 +1,15 @@
+.input {
+	text-align: center;
+}
+.input > h1 {
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.input > input {
+	font-size: 1rem;
+	display: block;
+	width: 20rem;
+	height: 30px;
+	margin-top: 15px;
+	padding: 1px 2px;
+}
