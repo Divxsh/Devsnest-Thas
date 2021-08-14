@@ -1,0 +1,28 @@
+.add-task {
+	width: auto;
+}
+
+.add-task > input {
+	font-size: 1.2rem;
+	border: 1px solid lightgray;
+	padding: 9px 0.5em;
+	margin-bottom: 10px;
+}
+
+.add-task > button {
+	font-size: 1.2rem;
+	height: 42px;
+	padding: 0 0.3em;
+	border: 1.5px solid #d3d3d3;
+	margin-left: 10px;
+	background-color: white;
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
+.add-task > button:active {
+	background-color: rgba(61, 180, 77, 0.808);
+	color: white;
+	border-radius: 3px;
+	transform: scale(0.97);
+}

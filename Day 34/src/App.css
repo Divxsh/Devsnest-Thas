@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	justify-content: flex-start;
+	height: 100vh;
+}
+
+.app > h2 {
+	color: rgb(220, 217, 20);
+	font-size: 2rem;
+	padding: 1em;
+}
+
+.toggle {
+	position: fixed;
+	top: 20px;
+	right: 70px;
+}
+.dark {
+	background-color: #212121;
+	border-color: white !important;
+	color: white;
+}
