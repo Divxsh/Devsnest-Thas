@@ -1,0 +1,110 @@
+.posts-container {
+	width: 40rem;
+	padding-top: 30px;
+}
+.story-container {
+	height: 85px;
+	white-space: nowrap;
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+	padding: 13px 0;
+	padding-left: 5px;
+}
+.story {
+	width: 58px;
+	height: 58px;
+	display: inline-block;
+	border: 2px solid #d53f90;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+
+.story > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	padding: 1px;
+}
+
+.posts-container div > button {
+	outline: none;
+	background-color: rgb(255, 255, 255);
+	transform: translate(610px, -50px);
+	z-index: 100;
+	border: none;
+	color: transparent;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	font-size: 1.3rem;
+	box-shadow: 0 0 5px 1px black;
+	text-align: center;
+	padding-left: 1px;
+}
+
+.posts-container .post {
+	width: 100%;
+	display: flex;
+	padding: 10px 0px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.posts-container .post .Card {
+	width: 40rem;
+	height: 40rem;
+	border: 1px solid rgba(128, 128, 128, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(255, 255, 255);
+}
+.posts-container .post .Card .title {
+	font-size: 1.8rem;
+	margin: 5px 0px;
+	padding: 5px 20px;
+	width: 100%;
+	height: 7%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.posts-container .post .Card .title i,
+h4 {
+	font-size: 1.2rem;
+	color: rgba(0, 0, 0, 0.795);
+}
+.posts-container .post .Card img {
+	width: 100%;
+	height: 85%;
+}
+.posts-container .post .Card .buttons {
+	width: 100%;
+	height: 7%;
+	display: flex;
+}
+.posts-container .post .Card .buttons i {
+	font-size: 1.8rem;
+	margin: 8px 10px;
+	cursor: pointer;
+}
+.posts-container .post .Card .buttons .liked {
+	transition: all 500ms ease 500ms;
+}
+.posts-container .post .Card .buttons .liked:focus {
+	animation: scaleInOut 500ms ease 500ms 1;
+}
+
+@keyframes scaleInOut {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		background-color: aquamarine;
+		transform: scale(1);
+	}
+}

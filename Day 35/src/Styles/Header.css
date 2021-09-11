@@ -1,0 +1,65 @@
+.navbar {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #dbdbdb;
+	background-color: white;
+}
+
+.navbar-items {
+	margin: 0 auto;
+	width: 850px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.navbar-items div.logo {
+	vertical-align: middle;
+	height: 28px;
+	transform: translateY(4px);
+}
+.navbar-items .searchbox {
+	width: auto;
+	height: auto;
+	position: relative;
+}
+.navbar-items .searchbox > i {
+	color: #8e8e8e;
+	transform: translate(68px, 4px);
+	position: absolute;
+}
+.navbar-items .searchbar {
+	width: 210px;
+	border: 1px solid #dbdbdb;
+	height: 24px;
+	border-radius: 3px;
+	color: #8e8e8e;
+	cursor: text;
+	font-size: 14px;
+	font-weight: 300;
+	outline: none;
+	padding: 3px 2px;
+	background-color: #fafafa;
+}
+
+.navbar-items .items {
+	height: 100%;
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-items .items i {
+	font-size: 1.7rem;
+	height: 27.03px;
+}
+
+::placeholder {
+	color: #8e8e8e;
+	text-align: center;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
